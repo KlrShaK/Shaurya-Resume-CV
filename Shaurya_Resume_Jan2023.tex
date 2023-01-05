@@ -1,0 +1,295 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Shaurya Kishore Panwar} \\ \vspace{1pt}
+     \href{mailto:mail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shauryak.panwar@outlook.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/shaurya-k-panwar}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/KlrShaK}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University}{Dec. 2020 -- Present}
+      {Bachelor of Technology in Engineering Physics (Majors in Electronics), CGPA: 8.3/10}{Delhi, India}
+    \resumeSubheading
+      {St. Xavier's Senior Sec. School}{Dec. 2020 -- Present}
+      {Central Board of Secondary Education, Percentage: 89.4\%}{Rohini, Delhi, India}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Discrete Structures
+                \item Machine Learning
+                \item Algorithms Analysis
+                \item Database Management
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Autonomous Systems Intern - Euler Motors}{July 2022 -- August 2022}
+      {Advisors: Mr. Gaurav Taank}{Delhi, India}
+
+      
+      {Developed Autonomous Stack for Prototype Autonomous Delivery Vehicle for large factories, capable of avoiding dynamic obstacles and simultaneously mapping and planning its optimal path.}
+      \vspace*{-2mm}
+      \resumeItemListStart
+        \resumeItem{Carried out LiDAR-Camera Fusion to generate 3D Semantic Maps from LiDAR Scan, Semantic segmented images are given as input which projects Point-cloud to Image space, extracting RGB information from the Image, back-project it to LiDAR space, and publishes a segmented Point-cloud.}
+        \resumeItem{Studied various graph-based SLAM algorithms for real-time mapping and localization. Selected modified RTAB-map for use with Velodyne VLP-16 because of faster inference time and better accuracy and localization capabilities at speed. Carried out generation of sparse-HD 3D map of the environment.}
+        \resumeItem{Carried out Sensor Fusion using Extended-Kalman Filters of Wheel Encoders, GPS and IMU to improve localization of our vehicle}
+        \resumeItem{Made path detection algorithm robust to noise and error by creating Filtering node for Point-cloud data to remove outliers, downsample received cloud for faster processing and carry out Ground Plane detection in Point-cloud.}
+        \resumeItem{Carried out Robot Model Generation (Unified Robotics Description Format) and developed simulation environment in Gazebo for efficient and agile testing of algorithms..}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Startup, Inc}{May 2019 -- August 2019}
+    %   {Front End Developer Intern}{City, State}
+    %   \resumeItemListStart
+    %     \resumeItem{Assisted in development of the front end of a mobile application for iOS/Android using Dart and the Flutter framework.}
+    %     \resumeItem{Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.}
+    %     \resumeItem{Collaborated with team members using version control systems such as Git to organize modifications and assign tasks.}
+    %     \resumeItem{Utilized Android Studio as a development environment in order to visualize the application in both iOS and Android.}
+    % \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{1pt}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Autonomous Systems Engineer - Team Defianz-DTUSDC }{May 2019 -- August 2019}
+      {Advisors: Prof. Anil S. Parihar \& Prof. Qasim Murtaza }{Delhi, India}
+      
+      
+      {Designing and Developing Autonomous Framework for Open-Wheeled Formula Student Driverless Race car, one of the first driverless team in India. Achieved 8th Position worldwide in FS Italy 2022}
+            
+      \resumeItemListStart
+       {\textbf{Perception Subsystem} $|$ \emph{Python, TensorFlow, ROS, Darknet-YOLOv4}}
+       \vspace{-2pt}
+        \resumeItem{Implemented YOLO V4 after exhaustively literature review of existing object detection algorithms and its performance}
+        \resumeItem{Built a CV pipeline capable of operating at high speed to accurately detect, localize and classify traffic cones. Starting from a small dataset (1000 images) with 3 categories, used image augmentation, transfer learning and custom synthetic dataset generation to improve accuracy by 20\%}
+        \resumeItem{Carried out extrinsic and intrinsic LiDAR-Camera calibration by projecting LiDAR data onto the image, to simultaneously carry out calibration of camera and LiDAR with an intuitive GUI to pin-point real-time location of cones(obstacles) in the environment}
+
+
+        \vspace{3pt}
+       {\textbf{Model-Based Planning Subsystem} $|$ \emph{Python, C++, Matplotlib, Numpy}}
+       \vspace{-2pt}
+        \resumeItem{Implemented a model-Based Planning algorithm BayesRace, using Bayesian Optimization to generate optimal Racing Line in just a few seconds, faster than traditional algorithms}
+        \resumeItem{After initial Random sampling of trajectories, a Gaussian process model was trained and used Bayesian Optimization to iteratively search for fastest racing line}
+        \resumeItem{Implemented a model-Based Planning algorithm BayesRace, using Bayesian Optimization to generate optimal Racing Line in just a few seconds, faster than traditional algorithms}
+
+
+       \vspace{4pt}
+       {\textbf{Software/Electronics Subsystem Testing and Architecture Analysis} $|$ \emph{Python, C++, Arduino, Flowcharts}}
+       \vspace{-2pt}
+        \resumeItem{Carried out rigorous System Level and Autonomous (SIL and HIL) Testing to ensure system reliability}
+        \resumeItem{Presented and proposed implementation of ADAS system for Ather Energy’s electric 2-wheeler}   
+      \resumeItemListEnd
+
+      
+      \vspace{50pt}
+      \newpage
+      % \vspace{50pt}
+      \resumeProjectHeading
+          {\textbf {NXP Self Driving Car Model} $|$ \emph{Python, TensorFlow, ROS2, OpenCV}}{January 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a Deep-learning based framework for visual navigation using Imitation Learning in an urban environment laid with obstacles such as pedestrians, barricades and other cars. Deployed End-to-End CNN model with regularization technique with ROS2 in a simulated environment}
+            \resumeItem{Developed custom dataset for traffic signs and implemented YOLOV4 tiny for traffic sign detection}
+            \resumeItem{Developed custom path planning pipeline in conjunction with using Pure Pursuit for controls, to recognize vehicle state and tackle traffic signs and obstacles}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{Age-Invariant Face Recognition} $|$ \emph{TensorFlow, GAN}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{Built an Age-Invariant Face Recognition model using TensorFlow, trained on CACD. A unified deep architecture performs cross-age face synthesis and recognition simultaneously, removes the requirement of paired data and true age of samples}
+            \resumeItem{Extended from auto-encoder based GAN, an Encoder and discriminator pair is used to learn discriminative and robust facial features disentangled from age}
+            \resumeItem{Patch-based discriminator with Attention, is used for photorealistic age regressed/progressed face images while guaranteeing robustness to large background complexity}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------Achievement---------------
+\section{Achievements and Awards}
+    \resumeItemListStart
+       \resumeItem{8th in FS Italy 2022 Engineering Design Event}
+       \resumeItem{3rd in NXP AIM India Smart Car Race Challenge and Best Car Model Award from over 400 teams nationally}
+       \resumeItem{2nd in FSEV Software and Integration Report}
+       \resumeItem{Successfully Passed TensorFlow Developer Certification. A 5-hour rigorous test, testing a candidate’s proficiency in solving Machine learning problems from various domains namely Computer Vision, NLP and Time Series}
+       \resumeItem{Mr. Personality (Runner-Up) in annual personality contest}
+    \resumeItemListEnd
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Team Defianz-DTUSDC Racing}{January 2022 -- Present}{Autonomous System Lead}{Delhi Tech. Uni}
+            \resumeItemListStart
+                \resumeItem{Personally responsible for acquiring Title Sponsorships from a tech giant like NXP Semiconductors}
+                \resumeItem{Responsible for development and Presentation of Autonomous pipeline for Formula Student Italy 2022 driverless competition}
+                \resumeItem{Responsible for the system integration of autonomous system into EV and constant review of individual department progress}
+                \resumeItem{Carried out recruitment process, managing 10+ new recruits, overlooking their training and turning them into an asset for the team in under 2 months}
+            \resumeItemListEnd
+
+
+        \resumeSubheading{Desh ke Mentor Program}{January 2022 -- June 2022}{Mentee}{Delhi Tech. Uni}
+            \resumeItemListStart
+                \resumeItem{Mentored 4 high-school students for 6 months, guiding them through the process of exploring their potential career choices and mentoring them with a plan of action and series of goals through their desired career path}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Java, Arduino, MATLAB/Octave, Bash Scripting, \LaTeX} \\
+     \textbf{Framework and Libraries}{: Linux, TensorFlow, Keras, ROS(Robot Operating System), ROS2, OpenCV, Gazebo, pandas, SciKit-learn, Flask, HTML, Bootstrap, NumPy, Matplotlib, SQL} \\
+     \textbf{Tools}{: Git, postgres SQL, Anaconda} \\
+     \textbf{Soft Skills}{: Leadership, Public Speaking, Strategic Planning} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+\end{document}
